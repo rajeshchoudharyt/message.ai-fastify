@@ -266,7 +266,7 @@ fastify.patch("/groups", async (req, res) => {
 
 //
 // ---------- Server ----------
-fastify.listen({ port: 3001 }, (err, address) => {
+fastify.listen({ port: process.env.PORT }, (err, address) => {
 	if (err) {
 		fastify.log.error(err);
 		process.exit(1);
