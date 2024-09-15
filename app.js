@@ -264,6 +264,10 @@ fastify.patch("/groups", async (req, res) => {
 	return res.send(data);
 });
 
+fastify.get("/", (req, res) => {
+	return res.send("Server is running...");
+});
+
 // Cron job - To keep app spinning (Inactivity timeout - 15 min)
 try {
     setTimeout(() => {
