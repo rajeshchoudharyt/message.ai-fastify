@@ -270,7 +270,7 @@ fastify.get("/", (req, res) => {
 
 // Cron job - To keep app spinning (Inactivity timeout - 15 min)
 try {
-    setTimeout(() => {
+    setInterval(() => {
 	    fetch("https://message-ai-fastify.onrender.com/");
     }, 14 * 60 * 1000);
 } catch (err) {}
