@@ -264,6 +264,13 @@ fastify.patch("/groups", async (req, res) => {
 	return res.send(data);
 });
 
+// Cron job - To keep app spinning (Inactivity timeout - 15 min)
+try {
+    setTimeout(() => {
+	    fetch("https://message-ai-fastify.onrender.com/");
+    }, 14 * 60 * 1000);
+} catch (err) {}
+
 //
 // ---------- Server ----------
 fastify.listen({ port: process.env.PORT, host: "0.0.0.0" }, (err, address) => {
