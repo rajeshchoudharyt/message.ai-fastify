@@ -3,7 +3,7 @@
 **Tech Stack** - Fastify, WebSocket, Llama 3.1 (Groq API), Firebase (Firestore Database), CORS, uuid
 
 Frontend repository,
-https://rajeshchoudharyt.github.io/message.ai-nextjs
+https://github.com/rajeshchoudharyt/message.ai-nextjs
 
 ## Getting Started
 
